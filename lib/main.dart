@@ -1,6 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(
@@ -121,6 +122,38 @@ class HomePage extends StatelessWidget {
                           ),
                         ],
                       ),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Text(
+                          "\$148",
+                          style: GoogleFonts.gabarito(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        SizedBox(height: 8),
+                        Row(
+                          children: [
+                            SizedBox(
+                              height: 30,
+                              width: 30,
+                              child: CupertinoButton(
+                                padding: EdgeInsets.zero,
+                                color: Color(0xff8E6CEF),
+                                borderRadius: BorderRadius.circular(100),
+                                onPressed: () {},
+                                child: Image.asset(
+                                  "assets/add.png",
+                                  height: 18,
+                                  width: 18,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ],
                 ),
