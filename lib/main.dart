@@ -69,12 +69,24 @@ class HomePage extends StatelessWidget {
                       width: 64,
                     ),
                     SizedBox(width: 12),
-                    Column(
-                      children: [
-                        Text(
-                          "Men's Harrington Jacket",
-                        ),
-                      ],
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Men's Harrington Jacket",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 13,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          SizedBox(height: 8),
+                          Row(
+                            children: [],
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
